@@ -1,0 +1,152 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+/* Color Theme Swatches in Hex */
+$color-fontPrin: #212121;
+$color-background: #fff;
+$color-acent: #00A7EE;
+
+/*FONT*/
+$main-font:'Roboto',
+sans-serif;
+
+html {
+    scroll-behavior: smooth;
+    //ESTILOS EN SCROLLBAR
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 8px;
+    }
+
+    //Estilos barra (thumb) de scroll
+    &::-webkit-scrollbar-thumb {
+        background: $color-acent;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+        background-color: $color-acent;
+    }
+
+    body {
+        font-family: $main-font;
+        background-color: $color-background;
+        overflow-x: hidden;
+
+
+        .header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            .logo p {
+                margin-left: 30px;
+            }
+
+            .nav {
+                display: flex;
+                font-family: $main-font;
+
+                .link {
+                    padding: 10px;
+                    margin-right: 10px;
+                    color: $color-fontPrin;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-family: $main-font;
+                    transition: all 0.2s;
+                    position: relative;
+                    display: inline-block;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 100%;
+                        display: inline-block;
+                        height: 0.1rem;
+                        background: $color-acent;
+                        transition: all 0.25s cubic-bezier(1, 0.1, 0.16, 0.9);
+                    }
+
+                    &:hover {
+                        color: $color-acent;
+                    }
+
+                    &:hover::after {
+                        right: 0;
+                        height: 1px;
+                        background: $color-acent;
+                    }
+                }
+            }
+
+        }
+
+        .main-text {
+            max-width: 100%;
+            min-height: 100vh;
+
+            &-principal {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .second-part {
+            max-width: 100%;
+            min-height: 100vh;
+
+            &-SP {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .firstImg {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .footer {
+            width: 100%;
+            height: 200px;
+            background-color: $color-acent;
+            font-family: $main-font;
+
+            img {
+                margin: 50px 0 0 30px;
+            }
+
+            .paragraph {
+                margin: 10px 0px 0px 30px;
+                display: flex;
+                flex-direction: column;
+
+                h5 {
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                }
+            }
+
+            .box {
+                background-color: $color-acent;
+
+                .btn {
+                    margin-right: 300px;
+                    float: right;
+                    padding: 10px 40px;
+
+                }
+            }
+        }
+    }
+}

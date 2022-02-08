@@ -1,0 +1,214 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+/* Color Theme Swatches in Hex */
+$color-fontPrin: #212121;
+$color-background: #fff;
+$color-acent: #00A7EE;
+$custom-easing: cubic-bezier(1, .1, 0, 0.9);
+
+/*FONT*/
+$main-font:'Roboto',
+sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+
+    body {
+        font-family: $main-font;
+        background: $color-background;
+
+        .fa-chevron-left {
+            font-size: 2.5rem;
+            margin: 20px 0px 0px 150px;
+        }
+
+    }
+
+    main {
+        max-width: 800px;
+        width: 90%;
+        margin: auto;
+        padding: 40px;
+    }
+
+    .formulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .formulario__label {
+        display: block;
+        font-weight: 700;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+
+    .formulario__grupo-input {
+        position: relative;
+    }
+
+    .formulario__input {
+        width: 100%;
+        background: rgb(245, 244, 244);
+        border: 3px solid transparent;
+        border-radius: 3px;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 40px 0 10px;
+        transition: .3s ease all;
+        border: 2px solid $color-acent;
+    }
+
+    .textArea {
+        background: rgb(245, 244, 244);
+        border: 3px solid transparent;
+        border-radius: 3px;
+        height: 250px;
+        line-height: 45px;
+        padding: 0 40px 0 10px;
+        transition: .3s ease all;
+        border: 2px solid $color-acent;
+    }
+
+    .formulario__input:focus {
+        border: 3px solid #0075FF;
+        outline: none;
+        box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+    }
+
+    .formulario__input-error {
+        font-size: 12px;
+        margin-bottom: 0;
+        display: none;
+    }
+
+    .formulario__input-error-activo {
+        display: block;
+    }
+
+    .formulario__validacion-estado {
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+        z-index: 100;
+        font-size: 16px;
+        opacity: 0;
+    }
+
+    .formulario__checkbox {
+        margin-right: 10px;
+    }
+
+    .formulario__grupo-terminos,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: span 2;
+    }
+
+    .formulario__mensaje {
+        height: 45px;
+        line-height: 45px;
+        background: #F66060;
+        padding: 0 15px;
+        border-radius: 3px;
+        display: none;
+    }
+
+    .formulario__mensaje-activo {
+        display: block;
+    }
+
+    .formulario__mensaje p {
+        margin: 0;
+    }
+
+    .formulario__grupo-btn-enviar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario__btn {
+        height: 45px;
+        line-height: 45px;
+        width: 30%;
+        background: $color-acent;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: .1s ease all;
+    }
+
+    .formulario__btn:hover {
+        box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+    }
+
+    .formulario__mensaje-exito {
+        font-size: 2.2rem;
+        color: #119200;
+        display: none;
+    }
+
+    .formulario__mensaje-exito-activo {
+        display: block;
+    }
+
+    /* ----- -----  Estilos para Validacion ----- ----- */
+    .formulario__grupo-correcto .formulario__validacion-estado {
+        color: #1ed12d;
+        opacity: 1;
+    }
+
+    .formulario__grupo-incorrecto .formulario__label {
+        color: #bb2929;
+    }
+
+    .formulario__grupo-incorrecto .formulario__validacion-estado {
+        color: #bb2929;
+        opacity: 1;
+    }
+
+    .formulario__grupo-incorrecto .formulario__input {
+        border: 3px solid #bb2929;
+    }
+
+    .modal-container {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        pointer-events: none;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        
+    }
+
+    .show {
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    .modal {
+        background-color: #fff;
+        width: 600px;
+        max-width: 100%;
+        padding: 30px 50px;
+        border-radius: 5px;
+        text-align: center;
+    }
+}

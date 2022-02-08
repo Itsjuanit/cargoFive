@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../sass/style2.css">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <title>Challange CargoFive</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><i class="fas fa-chevron-left"></i></a>
+    </header>
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <div class="formulario__grupo" id="grupo__solicitud">
+                <label for="solicitud" class="formulario__label">Número de solicitud</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="solicitud" id="solicitud"
+                        placeholder="Ingresar número de solicitud">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La solicitud debe contener mas de 5 digitos.
+                </p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario__label">Nombre y apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Juan Ignacio"
+                        required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener
+                    numeros, letras y guion bajo.</p>
+            </div>
+
+            <div class="formulario__grupo">
+                <label for="documento" class="formulario__label">Número de documento</label>
+                <div class="formulario__grupo-input">
+                    <input type="number" class="formulario__input" name="documento"
+                        placeholder="Ingresar número de documento" required>
+                </div>
+                <p class="formulario__input-error">Ingresar correctamente su DNI
+                </p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo"
+                        placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+                    guion bajo.</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__telefonoFijo">
+                <label for="telefonoFijo" class="formulario__label">Teléfono fijo</label>
+                <div class="formulario__grupo-input">
+                    <input type="number" class="formulario__input" name="telefonoFijo" id="telefonoFijo"
+                        placeholder="+54 26434567">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.
+                </p>
+            </div>
+
+
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono celular</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono"
+                        placeholder="+54 9 2644478798" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.
+                </p>
+            </div>
+
+
+            <div class="formulario__grupo" id="grupo__selected">
+                <label for="selected" class="formulario__label">Motivo de la devolución</label>
+                <div class="formulario__grupo-input">
+                    <select name="select" type="text" class="formulario__input" name="selected" id="selected"
+                        placeholder="Seleccionar" required>
+                        <option value="value1">No es lo que pedí</option>
+                        <option value="value2" selected>El producto está dañado</option>
+                        <option value="value3">Otros</option>
+                    </select>
+
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.
+                </p>
+            </div>
+            <br />
+            <div class="formulario__grupo" id="grupo__selected">
+                <label for="selected" class="formulario__label">Observaciones</label>
+                <div class="formulario__grupo-input">
+                    <textarea cols="30" rows="10" name="select" type="text" class="textArea" name="selected"
+                        id="selected" placeholder="Observaciones" required></textarea>
+
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.
+                </p>
+            </div>
+
+            <br />
+
+            <button type="submit" class="formulario__btn" id="btn-modal">Solicitar</button>
+            <div id="modal_container" class="modal-container">
+                <div class="modal">
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente,
+                        su numero de solicitud es el 343425.
+                    </p>
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                            correctamente. </p>
+                    </div>
+                    <button id="close">Cerrar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="../JS/script.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+</html>

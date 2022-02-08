@@ -121,31 +121,56 @@ html {
             height: 200px;
             background-color: $color-acent;
             font-family: $main-font;
-
+            
+            
             img {
                 margin: 50px 0 0 30px;
             }
-
-            .paragraph {
-                margin: 10px 0px 0px 30px;
+            
+            .boxs {
                 display: flex;
-                flex-direction: column;
+                width: 100vw;
+                justify-content: space-between;
 
-                h5 {
-                    font-size: 1.3rem;
-                    font-weight: bold;
+                .paragraph {
+                    margin: 10px 0px 0px 30px;
+                    display: flex;
+                    flex-direction: column;
+    
+                    h5 {
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                    }
                 }
+    
+                .box {
+                    background-color: $color-acent;
+                    margin-right: 50px;
+                    .btn {
+                        text-align: center;
+                        text-decoration: none;
+                        font-family: $main-font;
+                        display: inline-block;
+                        color: $color-background;
+                        background: #7F8C8D;
+                        padding: 15px 40px;
+                        white-space: nowrap;
+                        margin: 10px 5px;
+                        -webkit-transition: all 0.2s ease-in-out;
+                        -ms-transition: all 0.2s ease-in-out;
+                        -moz-transition: all 0.2s ease-in-out;
+                        -o-transition: all 0.2s ease-in-out;
+                        transition: all 0.2s ease-in-out;
+                        background: $color-acent;
+                        font-weight: bold;
+                        
+                        &:hover {
+                            background: #fcfcfc;
+                            color: $color-acent;
+                            font-weight: bold;
+                        }
+                    }
             }
-
-            .box {
-                background-color: $color-acent;
-
-                .btn {
-                    margin-right: 300px;
-                    float: right;
-                    padding: 10px 40px;
-
-                }
             }
         }
     }

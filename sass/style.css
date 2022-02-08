@@ -142,7 +142,17 @@ html body .footer img {
   margin: 50px 0 0 30px;
 }
 
-html body .footer .paragraph {
+html body .footer .boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body .footer .boxs .paragraph {
   margin: 10px 0px 0px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,18 +163,35 @@ html body .footer .paragraph {
           flex-direction: column;
 }
 
-html body .footer .paragraph h5 {
+html body .footer .boxs .paragraph h5 {
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-html body .footer .box {
+html body .footer .boxs .box {
   background-color: #00A7EE;
+  margin-right: 50px;
 }
 
-html body .footer .box .btn {
-  margin-right: 300px;
-  float: right;
-  padding: 10px 40px;
+html body .footer .boxs .box .btn {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  color: #fff;
+  background: #7F8C8D;
+  padding: 15px 40px;
+  white-space: nowrap;
+  margin: 10px 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #00A7EE;
+  font-weight: bold;
+}
+
+html body .footer .boxs .box .btn:hover {
+  background: #fcfcfc;
+  color: #00A7EE;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

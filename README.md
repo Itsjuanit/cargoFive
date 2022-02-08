@@ -1,10 +1,11 @@
 # CargoFive Challenge
 
 ## Indice
-Es un proyecto realizado por Juan Ignacio Tejada.
+Es un proyecto realizado por Juan Ignacio Tejada.❤🚀
 - [Sobre el proyecto](#about)
 - [Tecnologías](#tecno)
 - [DEMO](#DEMO)
+- [FIGMA](#FIGMA)
 
 
 ## Sobre el proyecto <a name = "about"></a>
@@ -52,5 +53,9 @@ el sitio se desplego en Vercel para asi estar online.
 
 
 ## DEMO <a name = "DEMO"></a>
+
+<a href="https://cargo-five.vercel.app/" target="_blank">DEMO</a>
+
+## FIGMA <a name = "FIGMA"></a>
 
 <a href="https://cargo-five.vercel.app/" target="_blank">DEMO</a>

@@ -1,46 +1,54 @@
-# CargoFive Challange
+# CargoFive Challenge
 
-## Table of Contents
+## Indice
+Es un proyecto realizado por Juan Ignacio Tejada.
+- [Sobre el proyecto](#about)
+- [Tecnologías](#tecno)
+- [DEMO](#DEMO)
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
 
-## About <a name = "about"></a>
+## Sobre el proyecto <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Es un proyecto donde se pidieron las siguientes consignas: 
+ Se debe desarrollar un botón dentro de la plataforma, que se denomine
+“Devoluciones”, el mismo debe encontrarse en el footer del sitio, y debe permitir
+ingresar a un formulario
+● El formulario debe contener los siguientes campos, con exactamente estos
+mismos nombres y en este orden:
+Campos
+- Número de solicitud: El campo debe ser de tipo mandatorio, numérico mayor a
+0.
+El campo debe permitir únicamente números de pedidos de productos existentes
+en la plataforma, en caso de no existir, debe mostrar un mensaje que indique que
+la misma no existe en el sistema.
+- Nombre y apellido: El campo debe ser de tipo:
+- Mandatorio campo tipo texto.
+- No debe validar mayúsculas, minúsculas ni acentos.
+- Número de documento: El campo debe ser de tipo, mandatorio y numérico
+- Mail de contacto: El campo debe ser de tipo mandatorio y alfanumérico. Se
+debe validar que contenga como mínimo el siguiente formato
+“ejemplo@ejemplo.com”.
+- Teléfono fijo:El campo debe ser de tipo opcional, tipo de campo numérico.
+- Teléfono celular: El campo debe ser de tipo mandatorio, tipo de campo
+numérico.
+- Motivo de devolución: El campo debe ser de tipo mandatorio, y debe ser un
+campo desplegable (drop down)
+Las lista de valores debe ser del campo debe ser:
+- No es lo que pedí.
+- El producto está dañado.
+- Otros.
+- Observaciones: Debe ser una casilla a completar, puede permitir letras,
+números y símbolos, y la misma no debe validar información.
+No debe ser un campo obligatorio, puede ser opcional.
 
-## Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### Prerequisites
+## Tecnologías <a name = "tecno"></a>
 
-What things you need to install the software and how to install them.
+Se utilizo primero que nada Figma para maquetar y realizar el proceso de pruebas con diferentes comportamientos.
 
-```
-Give examples
-```
+Despues se utilizo HTML, CSS( SCSS ) y JAVASCRIPT VANILLA, tambien se utilizo Git y GitHub para realizar el control de versiones, 
+el sitio se desplego en Vercel para asi estar online.
 
-### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Usage <a name = "usage"></a>
-
-Add notes about how to use the system.
+## DEMO <a name = "tecno"></a>

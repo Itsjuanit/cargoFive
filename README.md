@@ -58,4 +58,4 @@ el sitio se desplego en Vercel para asi estar online.
 
 ## FIGMA <a name = "FIGMA"></a>
 
-<a href="https://cargo-five.vercel.app/" target="_blank">DEMO</a>
+<a href="https://www.figma.com/proto/4WNFbjBjx2bGPRopjQGD4B/CargoFive?page-id=2%3A4&node-id=2%3A17&viewport=241%2C48%2C0.13&scaling=scale-down&starting-point-node-id=2%3A17/" target="_blank">Figma con interacciones.</a>
